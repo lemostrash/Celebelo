@@ -1,61 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
 
-  body {
-    animation: gradient 15s ease infinite;
-    background: linear-gradient(-45deg, #F6CEE6, #F6CEE6, #23a6d5, #23d5ab) no-repeat;
-    background-size: 300% 300%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    height: 100vh;
-  }
+body {
+  animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #f6cee6, #f6cee6, #23a6d5, #23d5ab)
+    no-repeat;
+  background-size: 300% 300%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100vh;
+}
 
 @keyframes gradient {
-    0% {
-        background-position: 0 50%;
-    }
+  0% {
+    background-position: 0 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0 50%;
-    }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.bloco{
+
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  height: 35%;
+  background-color: white;
+  opacity: 0.3;
+  transform: translate(10, 15%);
 }
 
 .dados {
-    position: absolute;
-    text-align: center;
-    font-size: clamp(8px, 5vw, 25px);
-    bottom: 25%;
-    padding: 5px;
+  position: absolute;
+  text-align: center;
+  font-size: clamp(8px, 5vw, 25px);
+  bottom: 18%;
+  padding: 5px;
+  color: #5e6b8f;
 
 }
 
-.dados2{
-    position: absolute;
-    text-align: center;
-    font-size: clamp(7px, 4vw, 22px);
-    bottom: 19%;
-    color: #642428;
+.dados2 {
+  position: absolute;
+  text-align: center;
+  font-size: clamp(7px, 4vw, 22px);
+  bottom: 10%;
+  color: #642428;
 }
 
-  .foto{
-    position: absolute;
-    align-items: center;
-    top: 15%;
-    transform: translate(-3%, 30%);
-    height: 20%;
-  }
+.foto {
+  position: absolute;
+  align-items: center;
+  top: 15%;
+  transform: translate(-3%, 30%);
+  height: 20%;
+}
 
-  img{
-    height: 200px;
-  }
+img {
+  height: 200px;
+}
